@@ -35,7 +35,25 @@ function App() {
       </div>
       
       <div className="appContent">
-        <h1>Bem-vindo ao meu portfólio!!</h1>
+        <h1>Sobre Mim</h1>
+        <div className="sobreMim">
+          <p><strong>Sawubona!!</strong> Me chamo Rodolfo Melo, sou de Aracaju (SE).</p>
+          <p>Sou formado em <strong>Ciência da Computação</strong> pela Universidade Estácio de Sá e, desde sempre, fui movido pela curiosidade. Estudo diversos temas, especialmente dentro da computação:</p>
+          <ul>
+            <li>Desenvolvimento <strong>(Front-End e Back-End)</strong>;</li>
+            <li>Suporte Técnico <strong>(Windows, Linux, Redes de Computadores)</strong>;</li>
+            <li>Montagem e manutenção de computadores;</li>
+            <li>Ferramentas corporativas <strong>(Office 365, Notion, administração de sistemas)</strong>.</li>
+          </ul>
+          <p>Também me aventuro em outras áreas, como design gráfico, edição de vídeo, nutrição e educação física — acredito que conhecimento plural traz soluções mais criativas.</p>
+          <h2>Por que este Portfólio??</h2>
+          <ul>
+            <li>Quero mostrar minhas habilidades na prática (desde o código até o conteúdo);</li>
+            <li>Busco oportunidades para colaborar em projetos impactantes.</li>
+          </ul>
+          <p>Se achar que posso contribuir com seu time ou ideia, vamos conversar! Estou à disposição para bater um papo.</p>
+          <h2>Abaixo segue alguns dos meus trabalhos</h2>
+        </div>
       </div>
     </div>
   );
