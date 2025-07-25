@@ -75,7 +75,7 @@ header{
 }
 
 
-.appContent {
+.sobreMimContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,3 +159,142 @@ header{
   font-size: 1.1rem;
 }
 
+.youtubeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.youtubeItem{
+  margin: 1rem;
+}
+
+.youtubeContent h1{
+  font-size: 4rem;
+  text-align: center;
+  color: var(--lightPurple);
+  text-shadow: rgba(var(--purpleBlue), 0.7) 0 2px 4px;
+  padding-bottom: 1rem;
+}
+.youtubeItem iframe{
+  margin: 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.designContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--green);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.designContent h1{
+  font-size: 4rem;
+  text-align: center;
+  color: var(--glacialIce);
+  margin-bottom: 2rem;
+}
+.projectsItem{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.footer{
+  background-color: var(--lightPurple);
+  color: var(--glacialIce);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Exemplo de responsividade para mobile */
+@media (max-width: 900px) {
+  .appHeader {
+    min-height: 60vh;
+    padding: 1rem;
+  }
+  header {
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .appLogo {
+    max-width: 10rem;
+    min-width: 6rem;
+    max-height: 10rem;
+    min-height: 6rem;
+  }
+
+  .socialLinks {
+    gap: 1.5rem;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .sobreMim{
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .youtubeProjects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .youtubeItem iframe {
+    width: 90vw;
+    height: 200px;
+  }
+}
+
+/* Para telas muito pequenas */
+@media (max-width: 500px) {
+  header {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.2rem;
+  }
+
+  .appHeader {
+    min-height: 50vh;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .appLogo {
+    max-width: 6rem;
+    min-width: 4rem;
+    max-height: 6rem;
+    min-height: 4rem;
+  }
+
+  .sobreMim{
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .youtubeItem iframe {
+    width: 80vw;
+    height: 50vw;
+  }
+}
