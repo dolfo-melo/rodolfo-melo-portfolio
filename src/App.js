@@ -1,4 +1,9 @@
+import icone from './img/rodolfo-melo-logo.svg';
 import fotoPerfil from './img/foto_perfil_nova.png';
+import foodyFinds from './img/foodyFinds.png';
+import pokedex from './img/pokedex.png';
+import yukaMedicina from './img/yukaMedicina.png';
+import apiViaCep from './img/apiViaCep.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -11,7 +16,7 @@ function App() {
   return (
     <div className="app">
       <head>
-        <link rel="icon" href="%PUBLIC_URL%/meu-icone.ico" />
+        <link rel="icon" href={icone} />
       </head>
       
       <div className="appHeader">
@@ -86,22 +91,48 @@ function App() {
         </div>
       </div>
 
-      <div className="designContent">
-        <h1>Design Gráfico</h1>
+      <div className="projectContent">
+        <h1>Projetos</h1>
         <div className="projects">
-          <div className="projectsItem">
-            <img src="https://iili.io/Fkkuwt2.th.png" alt="flyer1" border="0"/> 
-            <img src="https://iili.io/FkkuOnS.th.png" alt="flyer2" border="0"/> 
-            <img src="https://iili.io/Fkkujwl.th.png" alt="flyer3" border="0"/> 
-            <img src="https://iili.io/FkkueM7.th.png" alt="flyer4" border="0"/> 
-            <img src="https://iili.io/FkkukP9.th.png" alt="flyer5" border="0"/>
+          <div className="projectContainer">
+          <div className="projectItem">
+            <img src={foodyFinds} alt="thumbProj" border="0"/> 
+            <h2>Foody Finds</h2>
+            <p>Função: Front-End/Scrum Master</p>
+            <div className="projectHeader">
+            <a href="https://dolfo-melo.github.io/nutriApi/" target="blanked">Ver site</a>
+            <a href="https://github.com/dolfo-melo/nutriApi" target="blanked">Ver repositório</a>
+            </div>
           </div>
-          <div className="projectsItem">
-            <img src="https://iili.io/Fkku8Fe.th.png" alt="flyer6" border="0"/> 
-            <img src="https://iili.io/FkkuScu.th.png" alt="flyer7" border="0"/> 
-            <img src="https://iili.io/FkkuU8b.th.png" alt="flyer8" border="0"/>
-            <img src="https://iili.io/FkkusoB.th.png" alt="flyer9" border="0"/> 
-            <img src="https://iili.io/FkkuPtV.th.png" alt="flyer10" border="0"/> 
+          <div className="projectItem">
+            <img src={pokedex} alt="thumbProj" border="0"/>
+            <h2>Pokedex</h2>
+            <p>Consumo da pokeAPI</p>
+            <div className="projectHeader">
+            <a href="https://dolfo-melo.github.io/pokedexSearch/" target="blanked">Ver site</a>
+            <a href="https://github.com/dolfo-melo/pokedexSearch" target="blanked">Ver repositório</a>
+            </div> 
+          </div>
+          </div>
+          <div className="projectContainer">
+          <div className="projectItem">
+            <img src={yukaMedicina} alt="thumbProj" border="0"/> 
+            <h2>Yuka Medicina</h2>
+            <p>Página de Login e Formulário</p>
+            <div className="projectHeader">
+            <a href="https://dolfo-melo.github.io/loginMedicina/" target="blanked">Ver site</a>
+            <a href="https://github.com/dolfo-melo/loginMedicina" target="blanked">Ver repositório</a>
+            </div>
+          </div>
+          <div className="projectItem">
+            <img src={apiViaCep} alt="thumbProj" border="0"/> 
+            <h2>API via CEP</h2>
+            <p>Consumo da OpenWeatherAPI</p>
+            <div className="projectHeader">
+            <a href="https://dolfo-melo.github.io/APIVIACEP/" target="blanked">Ver site</a>
+            <a href="https://github.com/dolfo-melo/APIVIACEP" target="blanked">Ver repositório</a>
+            </div>
+          </div>
           </div>
         </div>
       </div>
