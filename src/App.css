@@ -322,6 +322,10 @@ header{
     width: 90vw;
     height: 200px;
   }
+
+  .projectItem{
+    flex-direction: row;
+  }
 }
 
 /* Para telas muito pequenas */
@@ -349,11 +353,46 @@ header{
 
   .sobreMim{
     width: 90%;
-    padding: 2rem;
+    padding: 10%;
+    text-align: start;
+  }
+
+  .sobreMim p{
+    font-size: 18px;
+  }
+
+  .sobreMim li{
+    font-size: 14px;
+    text-align: center;
+    margin-right: 30%;
+  }
+
+  .sobreMim h2{
+    font-size: 25px;
+    text-align: center;
+    color: var(--cosmic);
+    text-shadow: 2px 0px 2px var(--lightPurple);
   }
 
   .youtubeItem iframe {
     width: 80vw;
     height: 50vw;
+  }
+
+  .projectContainer{
+    flex-direction: column;
+  }
+
+  .projectItem p{
+    text-align: center;
+  }
+  
+  .projectItem img{
+    width: 80%;
+    height: 80%;
+  }
+
+  .projectItem a{
+    width: 80%;
   }
 }
