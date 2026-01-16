@@ -1,5 +1,5 @@
 import icone from './img/rodolfo-melo-logo.svg';
-import fotoPerfil from './img/foto_perfil_nova.png';
+import fotoPerfil from './img/foto_perfil.png';
 import foodyFinds from './img/foodyFinds.png';
 import pokedex from './img/pokedex.png';
 import yukaMedicina from './img/yukaMedicina.png';
@@ -43,54 +43,6 @@ function App() {
         
       </div>
       
-      <div className="sobreMimContent">
-        <h1>Sobre Mim</h1>
-        <div className="sobreMim">
-          <p><strong>Sawubona!!</strong> Me chamo Rodolfo Melo, sou de Aracaju (SE).</p>
-          <p>Sou formado em <strong>Ciência da Computação</strong> pela Universidade Estácio de Sá e, desde sempre, fui movido pela curiosidade. Estudo diversos temas, especialmente dentro da computação:</p>
-          <ul>
-            <li>Desenvolvimento FullStack <strong>(HTML, CSS, JavaScript, Python, .NET)</strong>;</li>
-            <li>Bancos de Dados <strong>(PostgreSQL)</strong>;</li>
-            <li>Suporte Técnico <strong>(Windows, Linux, Redes de Computadores)</strong>;</li>
-            <li>Ferramentas corporativas <strong>(Office 365, Notion, Administração de Sistemas)</strong>.</li>
-            <li>Montagem e manutenção de computadores;</li>
-          </ul>
-          <p>Também me aventuro em outras áreas, como design gráfico, edição de vídeo, nutrição e educação física — acredito que conhecimento plural traz soluções mais criativas.</p>
-          <h2>Por que este Portfólio??</h2>
-          <ul>
-            <li>Quero mostrar minhas habilidades na prática (desde o código até o conteúdo);</li>
-            <li>Busco oportunidades para colaborar em projetos impactantes.</li>
-          </ul>
-          <p><strong>Se achar que posso contribuir com seu time ou ideia, vamos conversar! Estou à disposição para bater um papo.</strong></p>
-          <h2>Abaixo segue alguns dos meus trabalhos</h2>
-        </div>
-      </div>
-
-      <div className="youtubeContent">
-        <h1>Youtube</h1>
-        <div className="youtubeProjects">
-          <div className="youtubeItem">
-            <iframe width="840" height="472" src="https://www.youtube.com/embed/znxWYdq9Qj4?si=KNjESNekJqevbI4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          
-          <div className="youtubeItem">
-            <iframe width="840" height="472" src="https://www.youtube.com/embed/qzuxupU5cWY?si=kqyn3gSY-bn4R3UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          
-          <div className="youtubeItem">
-           <iframe width="840" height="472" src="https://www.youtube.com/embed/1GDOs8QRQfM?si=3AjpZdfwj_uqHuvO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          
-          <div className="youtubeItem">
-            <iframe width="840" height="472" src="https://www.youtube.com/embed/OZepatK--8A?si=uxc4937ntc36Aic-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          
-          <div className="youtubeItem">
-            <iframe width="840" height="472" src="https://www.youtube.com/embed/IHOy_GWUkqY?si=5N4rFopa_H91DbpF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
       <div className="projectContent">
         <h1>Projetos</h1>
         <div className="projects">
@@ -134,6 +86,54 @@ function App() {
             </div>
           </div>
           </div>
+        </div>
+      </div>
+
+      <div className="youtubeContent">
+        <h1>Youtube</h1>
+        <div className="youtubeProjects">
+          <div className="youtubeItem">
+            <iframe width="840" height="472" src="https://www.youtube.com/embed/znxWYdq9Qj4?si=KNjESNekJqevbI4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
+          <div className="youtubeItem">
+            <iframe width="840" height="472" src="https://www.youtube.com/embed/qzuxupU5cWY?si=kqyn3gSY-bn4R3UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
+          <div className="youtubeItem">
+           <iframe width="840" height="472" src="https://www.youtube.com/embed/1GDOs8QRQfM?si=3AjpZdfwj_uqHuvO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
+          <div className="youtubeItem">
+            <iframe width="840" height="472" src="https://www.youtube.com/embed/OZepatK--8A?si=uxc4937ntc36Aic-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          
+          <div className="youtubeItem">
+            <iframe width="840" height="472" src="https://www.youtube.com/embed/IHOy_GWUkqY?si=5N4rFopa_H91DbpF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div className="sobreMimContent">
+        <h1>Sobre Mim</h1>
+        <div className="sobreMim">
+          <p><strong>Sawubona!!</strong> Me chamo Rodolfo Melo, sou de Aracaju (SE).</p>
+          <p>Sou formado em <strong>Ciência da Computação</strong> pela Universidade Estácio de Sá e, desde sempre, fui movido pela curiosidade. Estudo diversos temas, especialmente dentro da computação:</p>
+          <ul>
+            <li>Desenvolvimento FullStack <strong>(HTML, CSS, JavaScript, Python, .NET)</strong>;</li>
+            <li>Bancos de Dados <strong>(PostgreSQL)</strong>;</li>
+            <li>Suporte Técnico <strong>(Windows, Linux, Redes de Computadores)</strong>;</li>
+            <li>Ferramentas corporativas <strong>(Office 365, Notion, Administração de Sistemas)</strong>.</li>
+            <li>Montagem e manutenção de computadores;</li>
+          </ul>
+          <p>Também me aventuro em outras áreas, como design gráfico, edição de vídeo, nutrição e educação física — acredito que conhecimento plural traz soluções mais criativas.</p>
+          <h2>Por que este Portfólio??</h2>
+          <ul>
+            <li>Quero mostrar minhas habilidades na prática (desde o código até o conteúdo);</li>
+            <li>Busco oportunidades para colaborar em projetos impactantes.</li>
+          </ul>
+          <p><strong>Se achar que posso contribuir com seu time ou ideia, vamos conversar! Estou à disposição para bater um papo.</strong></p>
+          <h2>Abaixo segue alguns dos meus trabalhos</h2>
         </div>
       </div>
 
