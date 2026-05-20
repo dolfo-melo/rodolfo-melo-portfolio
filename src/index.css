@@ -1,13 +1,62 @@
+/* ========== RESET & GLOBALS ========== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --glacialIce: #e9e8e6;
+  --cosmic: #effaf5;
+  --darkGreen: #257953;
+  --green: #3EC487;
+  --lightGreen: #AAE552;
+  --oceanBlue: #789EB9;
+  --lightPurple: #332B98;
+  --purpleBlue: #909CEF;
+  --darkPurple: #0E0B35;
+
+  /* Extras retro */
+  --windowBorder: #c0c0c0;
+  --gridLine: rgba(37, 121, 83, 0.12);
+  --shadow: rgba(14, 11, 53, 0.18);
+  --closeRed: #e74c6f;
+
+  --font-mono: 'Space Mono', 'Courier New', monospace;
+  --font-sans: 'Inter', 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--glacialIce);
+  color: var(--darkPurple);
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
