@@ -309,7 +309,7 @@
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 4px solid var(--darkPurple);
+  border: 4px solid var(--lightPurple);
   box-shadow: 0 6px 20px var(--shadow);
   object-fit: cover;
 }
@@ -317,7 +317,7 @@
 .profile--desktop .profile__photo {
   width: 180px;
   height: 180px;
-  border: 6px solid var(--darkPurple);
+  border: 6px solid var(--lightPurple);
 }
 
 .profile__greeting {
@@ -808,13 +808,26 @@
 /* ========== RESPONSIVE — MOBILE ========== */
 @media (max-width: 640px) {
   .os-desktop__area {
-    grid-template-columns: 85px 1fr 85px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
     padding: 1rem 0.5rem;
-    gap: 0.8rem;
+    gap: 1rem;
+    align-items: stretch;
   }
 
   .os-desktop__col {
-    gap: 2.5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .os-desktop__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   .os-desktop__title {
@@ -859,20 +872,25 @@
   }
 
   .modal-overlay {
-    padding: 0.5rem;
+    padding: 1rem;
+    align-items: flex-start;
+    overflow-y: auto;
   }
 
   .modal-window {
-    max-height: 92vh;
+    max-height: none; /* Let it flow in the scrollable overlay */
+    margin: auto;
+    width: 100%;
   }
 
   .modal-window__body {
-    padding: 1rem;
+    padding: 1.2rem 1rem;
+    max-height: 75vh;
   }
 
   .modal-window--wide,
   .modal-window--full {
-    max-width: 98vw;
+    max-width: 100%;
   }
 
   .profile__photo {

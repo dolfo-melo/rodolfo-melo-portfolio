@@ -26,7 +26,7 @@ function DesktopFolder({ label, onClick, color }) {
 }
 
 /* ── Window Modal ── */
-function WindowModal({ title, icon, children, onClose, className = '', progressWidth = 60 }) {
+function WindowModal({ title, children, onClose, className = '', progressWidth = 60 }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div
@@ -35,7 +35,6 @@ function WindowModal({ title, icon, children, onClose, className = '', progressW
       >
         <div className="modal-window__titlebar">
           <div className="modal-window__titlebar-text">
-            {icon && <span className="modal-window__titlebar-icon">{icon}</span>}
             <span>{title}</span>
           </div>
           <button className="modal-window__close" onClick={onClose} aria-label="Fechar">
@@ -221,7 +220,7 @@ function App() {
 
       {/* EXPERIENCE */}
       {openWindow === 'experience' && (
-        <WindowModal title="C:\RODOLFO\experience" icon="⭐" onClose={closeModal} className="modal-window--wide" progressWidth={80}>
+        <WindowModal title="C:\RODOLFO\experience" onClose={closeModal} className="modal-window--wide" progressWidth={80}>
           <div className="experience-list">
             {experiences.map((exp, i) => (
               <div key={i} className="experience-item">
@@ -243,7 +242,7 @@ function App() {
 
       {/* ABOUT / RESUME */}
       {openWindow === 'about' && (
-        <WindowModal title="C:\RODOLFO\resume" icon="📄" onClose={closeModal} className="modal-window--wide" progressWidth={65}>
+        <WindowModal title="C:\RODOLFO\resume" onClose={closeModal} className="modal-window--wide" progressWidth={65}>
           <div className="about">
             <p>
               <strong>Sawubona!!</strong> Me chamo Rodolfo Melo, sou de Aracaju (SE).
@@ -279,7 +278,7 @@ function App() {
 
       {/* TOOLS */}
       {openWindow === 'tools' && (
-        <WindowModal title="C:\RODOLFO\tools" icon="🛠️" onClose={closeModal} progressWidth={45}>
+        <WindowModal title="C:\RODOLFO\tools" onClose={closeModal} progressWidth={45}>
           <div className="tools-grid">
             {tools.map((tool, i) => (
               <ToolItem key={i} icon={tool.icon} label={tool.label} />
@@ -290,7 +289,7 @@ function App() {
 
       {/* PROJECTS */}
       {openWindow === 'projects' && (
-        <WindowModal title="C:\RODOLFO\projects" icon="💼" onClose={closeModal} className="modal-window--full" progressWidth={70}>
+        <WindowModal title="C:\RODOLFO\projects" onClose={closeModal} className="modal-window--full" progressWidth={70}>
           <div className="projects-grid">
             {projects.map((proj, i) => (
               <ProjectCard key={i} {...proj} />
@@ -301,7 +300,7 @@ function App() {
 
       {/* YOUTUBE */}
       {openWindow === 'youtube' && (
-        <WindowModal title="C:\RODOLFO\youtube" icon="🎬" onClose={closeModal} className="modal-window--full" progressWidth={55}>
+        <WindowModal title="C:\RODOLFO\youtube" onClose={closeModal} className="modal-window--full" progressWidth={55}>
           <div className="youtube-grid">
             {youtubeVideos.map((videoId, i) => (
               <div key={i} className="youtube-card">
@@ -320,7 +319,7 @@ function App() {
 
       {/* CONTACT */}
       {openWindow === 'contact' && (
-        <WindowModal title="C:\RODOLFO\contato" icon="📧" onClose={closeModal} progressWidth={50}>
+        <WindowModal title="C:\RODOLFO\contato" onClose={closeModal} progressWidth={50}>
           <div className="contact-content">
             <p className="contact-content__label">E-mail</p>
             <p className="contact-content__info">
@@ -349,7 +348,6 @@ function App() {
       {skillsModalData && (
         <WindowModal 
           title={`C:\\RODOLFO\\skills\\${skillsModalData.role.toLowerCase().replace(/\s+/g, '_')}`} 
-          icon="✨" 
           onClose={() => setSkillsModalData(null)} 
           progressWidth={100}
         >
