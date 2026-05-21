@@ -136,29 +136,29 @@ const tools = [
 ];
 
 const experiences = [
-  {
+    {
     role: 'Suporte técnico',
     company: 'NEWSUPRI · Tempo integral',
     date: 'abr de 2026 - o momento · 2 meses',
     location: 'Aracaju, Sergipe, Brasil · No local',
-    skills: 'Protocolo de internet (IP), Wi-Fi e mais 5 competências',
-    detailedSkills: ['Protocolo de internet (IP)', 'Wi-Fi', 'Competência 3', 'Competência 4', 'Competência 5', 'Competência 6', 'Competência 7'],
+    skills: 'Protocolo de internet (IP), Wi-Fi e mais 8 competências',
+    detailedSkills: ['Protocolo de internet (IP)', 'Wi-Fi', 'Rede de Computadores', 'Virtual LAN', 'Arquitetura de Redes', 'DNS', 'DHCP', 'Cisco', 'HPE Aruba', 'Suporte Técnico'],
   },
   {
     role: 'Content Creator',
     company: 'YouTube · Autônomo',
     date: 'out de 2024 - o momento · 1 ano 8 meses',
     location: 'Aracaju-SE',
-    skills: 'Design gráfico, Edição de vídeo e mais 8 competências',
-    detailedSkills: ['Design gráfico', 'Edição de vídeo', 'Competência 3', 'Competência 4', 'Competência 5', 'Competência 6', 'Competência 7', 'Competência 8', 'Competência 9', 'Competência 10'],
+    skills: 'Design gráfico, Edição de vídeo e mais 6 competências',
+    detailedSkills: ['Design gráfico', 'Edição de Vídeo', 'Gestão de Projetos', 'Comunicação', 'Edicação e Publicação', 'Gestão', 'Edição de Áudio', 'Edição de Imagens'],
   },
   {
     role: 'Assistente de treinamento',
     company: 'School Vision Professional · Tempo integral',
     date: 'jun de 2024 - nov de 2024 · 6 meses',
     location: 'Aracaju, Sergipe, Brasil · No local',
-    skills: 'Informática, Infraestrutura e mais 26 competências',
-    detailedSkills: ['Informática', 'Infraestrutura', 'Competência 3', 'Competência 4', '... adicione as outras aqui ...'],
+    skills: 'Informática, Infraestrutura e mais 22 competências',
+    detailedSkills: ['Informática', 'Infraestrutura', 'Resolução de Problemas', 'Impressoras', 'Suporte de Redes', 'Wi-fi', 'Rede LAN', 'Infraestutura de Rede', 'Gestão de Projetos', 'Sistemas Operacionais', 'Windows', 'Linux', 'Sistema de Produtividade Notion', 'Servidor Windows', 'Microsoft Office', 'Gestão', 'Fluxogramas', 'Montagem e Manutenção de Computadores', 'Redes sem fio', 'Suporte Help Desk', 'Atualização de Software', 'Suporte Técnico', 'Infraestrutura de Tecnologia da Informação'],
   }
 ];
 
