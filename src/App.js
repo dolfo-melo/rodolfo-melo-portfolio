@@ -35,6 +35,7 @@ function WindowModal({ title, children, onClose, className = '', progressWidth =
       >
         <div className="modal-window__titlebar">
           <div className="modal-window__titlebar-text">
+            {icon && <span className="modal-window__titlebar-icon">{icon}</span>}
             <span>{title}</span>
           </div>
           <button className="modal-window__close" onClick={onClose} aria-label="Fechar">
@@ -136,7 +137,7 @@ const tools = [
 ];
 
 const experiences = [
-    {
+  {
     role: 'Suporte técnico',
     company: 'NEWSUPRI · Tempo integral',
     date: 'abr de 2026 - o momento · 2 meses',
@@ -228,8 +229,8 @@ function App() {
                 <span className="experience-item__company">{exp.company}</span>
                 <span className="experience-item__date">{exp.date}</span>
                 <span className="experience-item__location">{exp.location}</span>
-                <button 
-                  className="experience-item__skills-btn" 
+                <button
+                  className="experience-item__skills-btn"
                   onClick={() => setSkillsModalData(exp)}
                 >
                   <FontAwesomeIcon icon={['fas', 'gem']} className="experience-item__skills-icon" /> {exp.skills}
@@ -346,9 +347,9 @@ function App() {
 
       {/* DETAILED SKILLS SUB-MODAL */}
       {skillsModalData && (
-        <WindowModal 
-          title={`C:\\RODOLFO\\skills\\${skillsModalData.role.toLowerCase().replace(/\s+/g, '_')}`} 
-          onClose={() => setSkillsModalData(null)} 
+        <WindowModal
+          title={`C:\\RODOLFO\\skills\\${skillsModalData.role.toLowerCase().replace(/\s+/g, '_')}`}
+          onClose={() => setSkillsModalData(null)}
           progressWidth={100}
         >
           <div className="skills-detailed">
@@ -381,7 +382,7 @@ function App() {
             <FontAwesomeIcon icon={['fab', 'youtube']} />
           </a>
         </div>
-        <p className="os-footer__copy">Rodolfo Melo © 2025</p>
+        <p className="os-footer__copy">Rodolfo Melo © 2026</p>
       </footer>
     </div>
   );
